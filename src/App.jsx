@@ -13,7 +13,6 @@ import Project3 from "./components/projects/Project3";
 import Project4 from "./components/projects/Project4";
 import { ThemeProvider } from "./components/ThemeContext";
 
-// Komponen untuk mengembalikan scroll ke atas saat pindah halaman
 const ScrollToTop = () => {
     const { pathname } = useLocation();
 
@@ -28,14 +27,14 @@ const App = () => {
     return (
         <div className="flex min-h-screen bg-white dark:bg-gray-950 text-gray-800 dark:text-white">
             <ScrollToTop />
-            
+
             {/* Navbar for mobile */}
             <div className="lg:hidden fixed top-0 w-full z-50">
                 <Navbar />
             </div>
 
             {/* Main container */}
-            <div className="container mx-auto px-6 md:px-8 xl:px-24 py-6 md:py-20 xl:py-12 max-w-7xl pt-20 lg:pt-12 flex w-full">
+            <div className="container mx-auto px-6 md:px-8 xl:px-24 py-6 md:py-24 xl:py-12 max-w-7xl pt-24 lg:pt-12 flex w-full">
                 <div className="flex flex-1 gap-2 w-full">
                     {/* Sidebar for desktop */}
                     <aside className="hidden lg:block fixed h-screen">

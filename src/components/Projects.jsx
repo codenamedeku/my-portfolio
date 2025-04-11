@@ -31,36 +31,40 @@ const tools = [
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description for Project 1',
+    id: 'project1',
+    title: 'Project Title',
+    description: 'Description of the project.',
     image: Project,
     tech: ['React.js', 'Tailwind CSS'],
   },
   {
-    title: 'Project 2',
-    description: 'Description for Project 2',
+    id: 'project2',
+    title: 'Project Title',
+    description: 'Description of the project.',
     image: Project,
     tech: ['React.js', 'Tailwind CSS'],
   },
   {
-    title: 'Project 3',
-    description: 'Description for Project 3',
+    id: 'project3',
+    title: 'Project Title',
+    description: 'Description of the project.',
     image: Project,
     tech: ['React.js', 'Tailwind CSS'],
   },
   {
-    title: 'Project 4',
-    description: 'Description for Project 4',
+    id: 'project4',
+    title: 'Project Title',
+    description: 'Description of the project.',
     image: Project,
     tech: ['React.js', 'Tailwind CSS'],
   },
 ];
 
-const ProjectCard = ({ title, description, image, tech }) => {
+const ProjectCard = ({ title, description, image, tech, id }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    const route = `/projects/${title.toLowerCase().replace(' ', '')}`;
+    const route = `/projects/${id}`;
     navigate(route);
   };
 
@@ -122,7 +126,8 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {projects.map((project) => (
             <ProjectCard
-              key={project.title}
+              key={project.id}
+              id={project.id}
               title={project.title}
               description={project.description}
               image={project.image}

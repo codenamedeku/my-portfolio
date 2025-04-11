@@ -32,20 +32,23 @@ const tools = [
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description for Project 1',
+    id: 'project1',
+    title: 'Project Title',
+    description: 'Description of the project.',
     image: Project,
     tech: ['React.js', 'Tailwind CSS'],
   },
   {
-    title: 'Project 2',
-    description: 'Description for Project 2',
+    id: 'project2',
+    title: 'Project Title',
+    description: 'Description of the project.',
     image: Project,
     tech: ['React.js', 'Tailwind CSS'],
   },
   {
-    title: 'Project 3',
-    description: 'Description for Project 3',
+    id: 'project3',
+    title: 'Project Title',
+    description: 'Description of the project.',
     image: Project,
     tech: ['React.js', 'Tailwind CSS'],
   },
@@ -58,11 +61,11 @@ const ToolItem = ({ name, icon: Icon, color }) => (
   </div>
 );
 
-const ProjectCard = ({ title, description, image, tech }) => {
+const ProjectCard = ({ title, description, image, tech, id }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    const route = `/projects/${title.toLowerCase().replace(' ', '')}`;
+    const route = `/projects/${id}`;
     navigate(route);
   };
 
@@ -166,7 +169,8 @@ const Home = () => {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-3">
           {projects.map((project) => (
             <ProjectCard
-              key={project.title}
+              key={project.id}
+              id={project.id}
               title={project.title}
               description={project.description}
               image={project.image}
