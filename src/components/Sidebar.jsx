@@ -49,7 +49,7 @@ const Sidebar = ({ closeSidebar, disableAvatarScroll = false }) => {
     }, [disableAvatarScroll]);
 
     return (
-        <aside className="h-full w-56 flex flex-col overflow-hidden bg-white dark:bg-gray-950 text-gray-800 dark:text-white">
+        <aside className="h-full w-56 flex flex-col overflow-hidden bg-white dark:bg-[#121212] text-gray-800 dark:text-white">
             {/* Profile Section */}
             <div className="flex flex-col items-start">
                 <div
@@ -71,7 +71,7 @@ const Sidebar = ({ closeSidebar, disableAvatarScroll = false }) => {
                 </p>
             </div>
 
-            <hr className="border-gray-200 dark:border-gray-800 my-4" />
+            <hr className="border-gray-200 dark:border-gray-900 my-4" />
 
             {/* Navigation */}
             <nav className="space-y-1.5">
@@ -87,11 +87,11 @@ const Sidebar = ({ closeSidebar, disableAvatarScroll = false }) => {
                 ))}
             </nav>
 
-            <hr className="border-gray-200 dark:border-gray-800 my-4" />
+            <hr className="border-gray-200 dark:border-gray-900 my-4" />
 
             {/* Social Links */}
             <div>
-                <h3 className="text-sm text-gray-300 dark:text-gray-400 font-medium mb-3">
+                <h3 className="text-sm text-gray-300 dark:text-gray-300 font-medium mb-3">
                     Find Me
                 </h3>
                 <div className="space-y-2">

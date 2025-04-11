@@ -25,7 +25,7 @@ const ScrollToTop = () => {
 
 const App = () => {
     return (
-        <div className="flex min-h-screen bg-white dark:bg-gray-950 text-gray-800 dark:text-white">
+        <div className="flex min-h-screen bg-white dark:bg-[#121212] text-gray-800 dark:text-white">
             <ScrollToTop />
 
             {/* Navbar for mobile */}

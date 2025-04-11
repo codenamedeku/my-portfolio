@@ -55,7 +55,7 @@ const projects = [
 ];
 
 const ToolItem = ({ name, icon: Icon, color }) => (
-  <div className="mx-1.5 flex flex-shrink-0 items-center rounded-full bg-white dark:bg-gray-900 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-700/30">
+  <div className="mx-1.5 flex flex-shrink-0 items-center rounded-full bg-white dark:bg-gray-800 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-800/30">
     <Icon className={`mr-2 w-4 h-4 ${color}`} />
     <span>{name}</span>
   </div>
@@ -71,7 +71,7 @@ const ProjectCard = ({ title, description, image, tech, id }) => {
 
   return (
     <div
-      className="relative flex h-full flex-col rounded-lg bg-white dark:bg-gray-900 transition-transform group border border-gray-200 dark:border-gray-700/30 cursor-pointer animate-fade-up"
+      className="relative flex h-full flex-col rounded-lg bg-white dark:bg-gray-800 transition-transform group border border-gray-200 dark:border-gray-800/30 cursor-pointer animate-fade-up"
       onClick={handleCardClick}
     >
       <div className="relative">
@@ -90,7 +90,7 @@ const ProjectCard = ({ title, description, image, tech, id }) => {
       <div className="flex flex-1 flex-col p-4">
         <h3 className="mb-2 text-base font-semibold text-gray-800 dark:text-gray-50">{title}</h3>
         <p className="flex-1 text-sm text-gray-600 dark:text-gray-300">{description}</p>
-        <hr className="border-gray-200 dark:border-gray-700 my-4" />
+        <hr className="border-gray-200 dark:border-gray-900 my-4" />
         <div className="flex flex-wrap gap-2">
           {tech.map((techName) => {
             const tool = tools.find((t) => t.name === techName);
@@ -120,11 +120,11 @@ const Home = () => {
         <h1 className="flex items-center text-3xl font-bold text-gray-800 dark:text-gray-50 gap-1">
           Hello, I'm Deva <span className="transition-transform duration-200 hover:rotate-12">👋</span>
         </h1>
-        <p className="mt-4 flex items-center text-sm text-gray-400 dark:text-gray-500">
-          <GoDotFill className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500" />
+        <p className="mt-4 flex items-center text-sm text-gray-400 dark:text-gray-400">
+          <GoDotFill className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-400" />
           Based in Cikarang, West Java, Indonesia
         </p>
-        <p className="mt-4 text-gray-500 dark:text-gray-400">
+        <p className="mt-4 text-gray-500 dark:text-gray-300">
           Specialist in front-end web development with expertise in React.js and
           Tailwind CSS. Skilled in crafting responsive, user-friendly, and
           high-performance websites with a focus on clean, maintainable code and
@@ -132,7 +132,7 @@ const Home = () => {
         </p>
       </section>
 
-      <hr className="mb-6 border-gray-200 dark:border-gray-800 animate-fade-up" />
+      <hr className="mb-6 border-gray-200 dark:border-gray-900 animate-fade-up" />
 
       {/* Tools Section */}
       <section className="mb-6 relative animate-fade-up">
@@ -151,7 +151,7 @@ const Home = () => {
         </div>
       </section>
 
-      <hr className="mb-6 border-gray-200 dark:border-gray-800 animate-fade-up" />
+      <hr className="mb-6 border-gray-200 dark:border-gray-900 animate-fade-up" />
 
       {/* Projects Section */}
       <section className="mb-6 animate-fade-up">
@@ -161,7 +161,7 @@ const Home = () => {
           </h2>
           <button
             onClick={() => navigate('/projects')}
-            className="text-sm font-medium text-gray-500 dark:text-gray-400 transition-colors hover:text-gray-800 dark:hover:text-gray-100"
+            className="text-sm font-medium text-gray-500 dark:text-gray-300 transition-colors hover:text-gray-800 dark:hover:text-gray-100"
           >
             View More
           </button>
@@ -180,18 +180,18 @@ const Home = () => {
         </div>
       </section>
 
-      <hr className="mb-6 border-gray-200 dark:border-gray-800 animate-fade-up" />
+      <hr className="mb-6 border-gray-200 dark:border-gray-900 animate-fade-up" />
 
       {/* Current Work Section */}
       <section className="mb-6 animate-fade-up">
         <h2 className="mb-4 text-xl font-bold text-gray-800 dark:text-gray-50">
           What I’m Working On
         </h2>
-        <p className="mb-6 text-gray-500 dark:text-gray-400">
+        <p className="mb-6 text-gray-500 dark:text-gray-300">
           I’ve been building projects to hone my skills in React.js and Tailwind
           CSS.
         </p>
-        <div className="p-5 rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700/30 animate-fade-up">
+        <div className="p-5 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-800/30 animate-fade-up">
           <h3 className="flex items-center text-lg font-semibold text-gray-800 dark:text-gray-50 mb-4 gap-2">
             <GoRocket className="mr-2 w-6 h-6 text-gray-800 dark:text-gray-50" />
             Let's work together!
@@ -202,7 +202,7 @@ const Home = () => {
           </p>
           <button
             onClick={() => navigate('/contact')}
-            className="font-semibold text-gray-700 dark:text-gray-200 px-4 py-2 rounded-md transition-colors bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-800/80 animate-fade-up"
+            className="font-semibold text-gray-700 dark:text-gray-200 px-4 py-2 rounded-md transition-colors bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600/80 animate-fade-up"
           >
             Contact me
           </button>
