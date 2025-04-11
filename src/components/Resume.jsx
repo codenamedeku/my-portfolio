@@ -19,7 +19,7 @@ const Resume = () => {
           {/* Buttons Section */}
           <div className="flex flex-col md:flex-row justify-center gap-4 mb-6">
             <a
-              href="https://drive.google.com/uc?export=download&id=1_d4aj7vKmDz0R0v9A8E5tA_6FZOmX2Cv"
+              href="https://drive.google.com/uc?export=download&id=1PNbqr9J8xKiUdVDI3KHVM8ArFI_Mmgbb"
               className="flex w-full md:w-1/2 items-center justify-center gap-2 px-4 py-2 border border-gray-200 dark:border-gray-900 rounded-md text-sm font-medium text-gray-800 dark:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors animate-fade-up"
               download
             >
@@ -37,7 +37,7 @@ const Resume = () => {
           {/* Resume PDF */}
           <div className="animate-fade-up border border-gray-200 dark:border-none">
             <iframe
-              src="https://drive.google.com/file/d/1_d4aj7vKmDz0R0v9A8E5tA_6FZOmX2Cv/preview"
+              src="https://drive.google.com/file/d/1PNbqr9J8xKiUdVDI3KHVM8ArFI_Mmgbb/preview"
               className="w-full h-[100vh] border-none"
               allow="autoplay"
               title="Resume PDF"
