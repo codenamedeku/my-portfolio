@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaSun, FaMoon } from 'react-icons/fa';
+import { LuMoonStar, LuSun } from "react-icons/lu";
 import { useTheme } from './ThemeContext';
 
 const ThemeToggle = () => {
@@ -12,9 +12,9 @@ const ThemeToggle = () => {
             aria-label="Toggle Dark Mode"
         >
             {darkMode ? (
-                <FaSun className="text-yellow-400" />
+                <LuSun className="text-white" />
             ) : (
-                <FaMoon className="text-yellow-400" />
+                <LuMoonStar className="text-gray-800" />
             )}
         </button>
     );

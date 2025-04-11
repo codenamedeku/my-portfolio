@@ -1,15 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowLeft, FiCode, FiExternalLink } from 'react-icons/fi';
-import { SiLaravel, SiReact, SiTailwindcss } from 'react-icons/si';
-import { FaDatabase } from 'react-icons/fa';
+import { SiReact, SiTailwindcss } from 'react-icons/si';
 import ProjectImage from '../../assets/projects/project.jpg';
 
 const techStack = [
-  { name: 'Laravel', icon: SiLaravel, color: 'text-red-500' },
   { name: 'React.js', icon: SiReact, color: 'text-cyan-300' },
   { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-teal-300' },
-  { name: 'MySQL', icon: FaDatabase, color: 'text-blue-300' },
 ];
 
 const TechItem = ({ name, icon: Icon, color }) => (

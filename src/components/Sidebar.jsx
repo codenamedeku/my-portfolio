@@ -61,12 +61,12 @@ const Sidebar = ({ closeSidebar, disableAvatarScroll = false }) => {
                         className="w-20 h-20 rounded-full object-cover mb-3"
                     />
                 </div>
-                <h2 className="text-lg font-medium flex items-center gap-2 text-gray-800 dark:text-gray-100">
+                <h2 className="text-lg font-semibold flex items-center gap-2 text-gray-800 dark:text-gray-100">
                     Deva Raja
                     <MdVerified className="text-blue-600 dark:text-blue-500 w-5 h-5" />
                 </h2>
                 <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1.5 mt-1">
-                    <GoDotFill className="text-green-600 dark:text-green-500 w-4 h-4" />
+                    <GoDotFill className="text-green-500 w-4 h-4" />
                     Working Remotely
                 </p>
             </div>
@@ -91,7 +91,7 @@ const Sidebar = ({ closeSidebar, disableAvatarScroll = false }) => {
 
             {/* Social Links */}
             <div>
-                <h3 className="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase mb-3">
+                <h3 className="text-sm text-gray-300 dark:text-gray-400 font-medium mb-3">
                     Find Me
                 </h3>
                 <div className="space-y-2">

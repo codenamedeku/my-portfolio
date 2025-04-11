@@ -78,7 +78,7 @@ const ProjectCard = ({ title, description, image, tech }) => {
           className="h-48 w-full rounded-t-lg object-cover"
           onError={(e) => (e.target.src = '/assets/projects/fallback.jpg')}
         />
-        <div className="absolute inset-0 flex items-center justify-center backdrop-blur-md bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-t-lg">
+        <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-t-lg">
           <span className="text-gray-100 text-sm font-medium flex items-center gap-4 group-hover:gap-2 transition-all duration-300">
             View Project <FiArrowUpRight className="w-4 h-4" />
           </span>

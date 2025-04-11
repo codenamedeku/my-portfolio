@@ -35,7 +35,7 @@ const Resume = () => {
             </button>
           </div>
           {/* Resume PDF */}
-          <div className="animate-fade-up">
+          <div className="animate-fade-up border border-gray-200 dark:border-none">
             <iframe
               src="https://drive.google.com/file/d/1_d4aj7vKmDz0R0v9A8E5tA_6FZOmX2Cv/preview"
               className="w-full h-[100vh] border-none"

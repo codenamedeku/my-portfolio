@@ -14,7 +14,7 @@ const NavItem = ({ to, icon: Icon, label, currentPath, closeSidebar }) => {
     <a
       href={to}
       onClick={handleClick}
-      className={`group flex items-center gap-2.5 px-3 py-2.5 text-sm font-medium rounded-md transition duration-200 ${
+      className={`group flex items-center gap-2.5 px-3 py-2.5 text-sm font-semibold rounded-md transition duration-200 ${
         isActive
           ? 'bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white'
           : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-800 dark:hover:text-white'

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { MdVerified } from "react-icons/md";
 import { HiOutlineMenu } from "react-icons/hi";
 import Sidebar from "./Sidebar";
+import ThemeToggle from "./ThemeToggle"; // Impor ThemeToggle
 import avatar from "../assets/avatar.png";
 
 const Navbar = () => {
@@ -39,19 +40,24 @@ const Navbar = () => {
             {/* Left Side */}
             <div className="flex items-center gap-3">
                 <img src={avatar} alt="Avatar" className="w-8 h-8 rounded-full object-cover" />
-                <h1 className="text-base font-medium flex items-center gap-2">
+                <h1 className="text-base font-semibold flex items-center gap-2">
                     Deva Raja
                     <MdVerified className="text-blue-600 dark:text-blue-500 w-5 h-5" />
                 </h1>
             </div>
 
-            {/* Right Side - Hamburger Menu */}
-            <button
-                className="text-gray-800 dark:text-white text-2xl"
-                onClick={() => setIsSidebarOpen(true)}
-            >
-                <HiOutlineMenu />
-            </button>
+            {/* Right Side */}
+            <div className="flex items-center gap-3">
+                {/* Theme Toggle */}
+                <ThemeToggle />
+                {/* Hamburger Menu */}
+                <button
+                    className="text-gray-800 dark:text-white text-2xl"
+                    onClick={() => setIsSidebarOpen(true)}
+                >
+                    <HiOutlineMenu />
+                </button>
+            </div>
 
             {/* Sidebar Overlay */}
             {isSidebarOpen && (
