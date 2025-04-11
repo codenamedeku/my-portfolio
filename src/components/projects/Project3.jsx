@@ -19,8 +19,8 @@ const TechItem = ({ name, icon: Icon, color }) => (
 const Project3 = () => {
   const navigate = useNavigate();
 
-  const sourceCodeLink = 's';
-  const liveDemoLink = 's';
+  const sourceCodeLink = '';
+  const liveDemoLink = '';
 
   const isLinkValid = (link) => link && link.trim() !== '';
 
