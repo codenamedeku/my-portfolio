@@ -1,27 +1,34 @@
-import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Sidebar from './components/Sidebar';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Dashboard from './components/Dashboard';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-import Project1 from './components/projects/Project1';
-import Project2 from './components/projects/Project2';
-import Project3 from './components/projects/Project3';
-import Project4 from './components/projects/Project4';
-import { ThemeProvider } from './components/ThemeContext';
+import { useLayoutEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Dashboard from "./components/Dashboard";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Project1 from "./components/projects/Project1";
+import Project2 from "./components/projects/Project2";
+import Project3 from "./components/projects/Project3";
+import Project4 from "./components/projects/Project4";
+import { ThemeProvider } from "./components/ThemeContext";
 
-const App = () => {
+// Komponen untuk mengembalikan scroll ke atas saat pindah halaman
+const ScrollToTop = () => {
     const { pathname } = useLocation();
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
+    useLayoutEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }, [pathname]);
 
+    return null;
+};
+
+const App = () => {
     return (
         <div className="flex min-h-screen bg-white dark:bg-gray-950 text-gray-800 dark:text-white">
+            <ScrollToTop /> {/* Pastikan ini ditambahkan di dalam App */}
+            
             {/* Navbar for mobile */}
             <div className="lg:hidden fixed top-0 w-full z-50">
                 <Navbar />
