@@ -18,7 +18,7 @@ const ScrollToTop = () => {
     const { pathname } = useLocation();
 
     useLayoutEffect(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0 });
     }, [pathname]);
 
     return null;
@@ -27,7 +27,7 @@ const ScrollToTop = () => {
 const App = () => {
     return (
         <div className="flex min-h-screen bg-white dark:bg-gray-950 text-gray-800 dark:text-white">
-            <ScrollToTop /> {/* Pastikan ini ditambahkan di dalam App */}
+            <ScrollToTop />
             
             {/* Navbar for mobile */}
             <div className="lg:hidden fixed top-0 w-full z-50">
