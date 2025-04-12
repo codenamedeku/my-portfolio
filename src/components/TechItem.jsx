@@ -2,7 +2,7 @@ const TechItem = ({ name, icon: Icon, color, variant = 'project' }) => {
     const isProjectVariant = variant === 'project';
     const iconSize = isProjectVariant ? 'text-sm' : 'w-4 h-4';
     const textSize = isProjectVariant ? 'text-xs' : 'text-sm';
-    const marginX = isProjectVariant ? '' : 'mx-1.5'; // Hanya untuk Home
+    const marginX = isProjectVariant ? '' : 'mx-1.5';
   
     return (
       <div
