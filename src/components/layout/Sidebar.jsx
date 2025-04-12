@@ -11,10 +11,10 @@ import {
 import { LuCoffee } from 'react-icons/lu';
 import { MdVerified } from 'react-icons/md';
 import { GoDotFill } from 'react-icons/go';
-import avatar from '../assets/avatar.png';
+import avatar from '../../assets/avatar.png';
 import NavItem from './NavItem';
 import SocialLink from './SocialLink';
-import ThemeToggle from './ThemeToggle';
+import ThemeToggle from '../theme/ThemeToggle';
 
 const navigation = [
     { to: '/', icon: RiHome2Line, label: 'Home' },

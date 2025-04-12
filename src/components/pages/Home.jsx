@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import { GoDotFill, GoRocket } from 'react-icons/go';
-import { projects } from '../data/projects';
-import { tools } from '../data/tools';
-import ProjectCard from './ProjectCard';
-import TechItem from './TechItem';
+import { projects } from '../../data/projects';
+import { tools } from '../../data/tools';
+import ProjectCard from '../shared/ProjectCard';
+import TechItem from '../shared/TechItem';
 
 const Home = () => {
   const navigate = useNavigate();

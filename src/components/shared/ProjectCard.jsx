@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { FiArrowUpRight } from 'react-icons/fi';
-import { tools } from '../data/tools';
+import { tools } from '../../data/tools';
 
 const ProjectCard = ({ title, description, image, tech, id }) => {
   const navigate = useNavigate();

@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { MdVerified } from "react-icons/md";
 import { HiOutlineMenu } from "react-icons/hi";
 import Sidebar from "./Sidebar";
-import ThemeToggle from "./ThemeToggle";
-import avatar from "../assets/avatar.png";
+import ThemeToggle from "../theme/ThemeToggle";
+import avatar from "../../assets/avatar.png";
 
 const Navbar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);

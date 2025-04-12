@@ -1,5 +1,5 @@
-import { projects } from '../data/projects';
-import ProjectCard from './ProjectCard';
+import { projects } from '../../data/projects';
+import ProjectCard from '../shared/ProjectCard';
 
 const Projects = () => {
   return (

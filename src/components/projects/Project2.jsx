@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowLeft, FiCode, FiExternalLink } from 'react-icons/fi';
 import { tools } from '../../data/tools';
-import TechItem from '../TechItem';
+import TechItem from '../shared/TechItem';
 import ProjectImage from '../../assets/projects/project.jpg';
 
 export const projectData = {
@@ -63,7 +63,7 @@ const Project2 = () => {
               className={`flex items-center justify-center gap-2 px-4 py-2 rounded-md text-xs font-medium transition-colors md:flex-1 select-none animate-fade-up ${
                 isLinkValid(sourceCodeLink)
                   ? 'bg-purple-800 text-gray-100 hover:bg-purple-800/90'
-                  : 'bg-purple-800 text-gray-400 dark:text-gray-400 opacity-60'
+                  : 'bg-purple-800 text-gray-300 dark:text-gray-400 opacity-60'
               }`}
               onClick={(e) => !isLinkValid(sourceCodeLink) && e.preventDefault()}
             >
