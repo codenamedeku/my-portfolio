@@ -26,7 +26,6 @@ const ScrollToTop = () => {
 };
 
 const App = () => {
-  // Map id proyek ke komponen
   const projectComponents = {
     project1: Project1,
     project2: Project2,
