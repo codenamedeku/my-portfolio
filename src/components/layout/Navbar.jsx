@@ -65,7 +65,7 @@ const Navbar = () => {
             )}
 
             {/* Sidebar */}
-            <div className={`fixed top-0 right-0 h-full p-6 bg-white dark:bg-[#121212] text-gray-800 dark:text-white border-l border-gray-200 dark:border-gray-900 transform ${isSidebarOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out z-50`}>
+            <div className={`fixed top-0 right-0 p-6 bg-white dark:bg-[#121212] text-gray-800 dark:text-white border-l border-gray-200 dark:border-gray-900 transform ${isSidebarOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out z-50`} style={{ height: 'calc(100vh - env(safe-area-inset-bottom))' }}>
                 <Sidebar closeSidebar={closeSidebar} disableAvatarScroll={true} />
             </div>
         </header>
