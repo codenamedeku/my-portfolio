@@ -49,7 +49,7 @@ const Sidebar = ({ closeSidebar, disableAvatarScroll = false }) => {
     }, [disableAvatarScroll]);
 
     return (
-        <aside className="h-full w-56 flex flex-col overflow-hidden bg-white dark:bg-[#121212] text-gray-800 dark:text-white">
+        <aside className="h-full w-56 flex flex-col overflow-y-auto bg-white dark:bg-[#121212] text-gray-800 dark:text-white">
             {/* Profile Section */}
             <div className="flex flex-col items-start">
                 <div
