@@ -11,7 +11,7 @@ const Contact = () => {
         </p>
       </section>
       {/* Divider */}
-      <hr className="mb-6 border-gray-200 dark:border-gray-900 animate-fade-up" />
+      <hr className="mb-6 border-gray-200 dark:border-gray-800 animate-fade-up" />
       <section className="mb-6 animate-fade-up">
         <h2 className="text-gray-800 dark:text-gray-50 font-semibold mb-6 animate-fade-up">
           Send me a message

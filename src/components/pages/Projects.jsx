@@ -12,7 +12,7 @@ const Projects = () => {
         </p>
       </section>
       {/* Divider */}
-      <hr className="mb-6 border-gray-200 dark:border-gray-900 animate-fade-up" />
+      <hr className="mb-6 border-gray-200 dark:border-gray-800 animate-fade-up" />
       {/* Projects Grid */}
       <section className="mb-6 animate-fade-up">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

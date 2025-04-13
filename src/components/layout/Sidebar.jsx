@@ -53,7 +53,9 @@ const Sidebar = ({ closeSidebar, disableAvatarScroll = false }) => {
             {/* Profile Section */}
             <div className="flex flex-col items-start">
                 <div
-                    className={`transition-all duration-500 ease-in-out overflow-hidden ${isAvatarVisible ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'}`}
+                    className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                        isAvatarVisible ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
                 >
                     <img
                         src={avatar}
@@ -71,7 +73,7 @@ const Sidebar = ({ closeSidebar, disableAvatarScroll = false }) => {
                 </p>
             </div>
 
-            <hr className="border-gray-200 dark:border-gray-900 my-4" />
+            <hr className="border-gray-200 dark:border-gray-800 my-4" /> {/* Ubah ke gray-800 */}
 
             {/* Navigation */}
             <nav className="space-y-1.5">
@@ -87,7 +89,7 @@ const Sidebar = ({ closeSidebar, disableAvatarScroll = false }) => {
                 ))}
             </nav>
 
-            <hr className="border-gray-200 dark:border-gray-900 my-4" />
+            <hr className="border-gray-200 dark:border-gray-800 my-4" /> {/* Ubah ke gray-800 */}
 
             {/* Social Links */}
             <div>

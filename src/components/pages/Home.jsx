@@ -27,7 +27,7 @@ const Home = () => {
         </p>
       </section>
 
-      <hr className="mb-6 border-gray-200 dark:border-gray-900 animate-fade-up" />
+      <hr className="mb-6 border-gray-200 dark:border-gray-800 animate-fade-up" />
 
       {/* Tools Section */}
       <section className="mb-6 relative animate-fade-up">
@@ -47,7 +47,7 @@ const Home = () => {
         </div>
       </section>
 
-      <hr className="mb-6 border-gray-200 dark:border-gray-900 animate-fade-up" />
+      <hr className="mb-6 border-gray-200 dark:border-gray-800 animate-fade-up" />
 
       {/* Projects Section */}
       <section className="mb-6 animate-fade-up">
@@ -76,7 +76,7 @@ const Home = () => {
         </div>
       </section>
 
-      <hr className="mb-6 border-gray-200 dark:border-gray-900 animate-fade-up" />
+      <hr className="mb-6 border-gray-200 dark:border-gray-800 animate-fade-up" />
 
       {/* Current Work Section */}
       <section className="mb-6 animate-fade-up">
@@ -87,7 +87,7 @@ const Home = () => {
           I’ve been building projects to hone my skills in React.js and Tailwind
           CSS.
         </p>
-        <div className="p-5 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-800/30 animate-fade-up">
+        <div className="p-5 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-800 animate-fade-up">
           <h3 className="flex items-center text-lg font-semibold text-gray-800 dark:text-gray-50 mb-4 gap-2">
             <GoRocket className="mr-2 w-6 h-6 text-gray-800 dark:text-gray-50" />
             Let's work together!

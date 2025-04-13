@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, image, tech, id }) => {
 
   return (
     <div
-      className="relative flex h-full flex-col rounded-lg bg-white dark:bg-gray-800 transition-transform group border border-gray-200 dark:border-gray-800/30 cursor-pointer animate-fade-up"
+      className="relative flex h-full flex-col rounded-lg bg-white dark:bg-gray-800 transition-transform group border border-gray-200 dark:border-gray-800 cursor-pointer animate-fade-up"
       onClick={handleCardClick}
     >
       <div className="relative">
@@ -31,7 +31,7 @@ const ProjectCard = ({ title, description, image, tech, id }) => {
       <div className="flex flex-1 flex-col p-4">
         <h3 className="mb-2 text-base font-semibold text-gray-800 dark:text-gray-50">{title}</h3>
         <p className="flex-1 text-sm text-gray-600 dark:text-gray-300 line-clamp-2">{description}</p>
-        <hr className="border-gray-200 dark:border-gray-900 my-4" />
+        <hr className="border-gray-200 dark:border-gray-700 my-4" />
         <div className="flex flex-wrap gap-2">
           {tech.map((techName) => {
             const tool = tools.find((t) => t.name === techName);
