@@ -6,7 +6,7 @@ import TechItem from '../shared/TechItem';
 import ProjectImage from '../../assets/projects/project.jpg';
 
 export const projectData = {
-  id: 'project2',
+  id: 'project1',
   title: 'Project Radio FM',
   description: 'A web application for streaming radio services.',
   image: ProjectImage,
@@ -39,11 +39,11 @@ const Project2 = () => {
         </h1>
         <p className="mt-4 text-gray-600 dark:text-gray-300">{projectData.description}</p>
       </section>
-      <hr className="mb-6 border-gray-200 dark:border-gray-900 animate-fade-up" />
+      <hr className="mb-6 border-gray-200 dark:border-gray-800 animate-fade-up" />
 
       <section className="flex flex-col md:flex-row gap-4 animate-fade-up">
         <div className="flex-[2] animate-fade-up">
-          <div className="relative rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800/30">
+          <div className="relative rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800">
             <img
               src={projectData.image}
               alt={title}
@@ -86,7 +86,7 @@ const Project2 = () => {
             </a>
           </div>
 
-          <hr className="mb-4 border-gray-200 dark:border-gray-900 animate-fade-up" />
+          <hr className="mb-4 border-gray-200 dark:border-gray-800 animate-fade-up" />
 
           <div className="animate-fade-up">
             <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-300 mb-4 text-center md:text-left">
