@@ -17,13 +17,10 @@ const Home = () => {
         </h1>
         <p className="mt-4 flex items-center text-sm text-gray-400 dark:text-gray-400">
           <GoDotFill className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-400" />
-          Based in Cikarang, West Java, Indonesia
+          Based in Sukabumi, West Java, Indonesia
         </p>
         <p className="mt-4 text-gray-500 dark:text-gray-300">
-          Specialist in front-end web development with expertise in React.js and
-          Tailwind CSS. Skilled in crafting responsive, user-friendly, and
-          high-performance websites with a focus on clean, maintainable code and
-          modern design principles.
+          I create interfaces that are easy to understand and websites that are practical, modern, and reliable.
         </p>
       </section>
 
@@ -84,8 +81,7 @@ const Home = () => {
           What I’m Working On
         </h2>
         <p className="mb-6 text-gray-500 dark:text-gray-300">
-          I’ve been building projects to hone my skills in React.js and Tailwind
-          CSS.
+          I’ve been building projects to improve my UI/UX design and front-end development skills.
         </p>
         <div className="p-5 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-800 animate-fade-up">
           <h3 className="flex items-center text-lg font-semibold text-gray-800 dark:text-gray-50 mb-4 gap-2">

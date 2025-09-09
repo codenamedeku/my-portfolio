@@ -1,6 +1,6 @@
-import { projectData as project1Data } from '../components/projects/Project1';
-import { projectData as project2Data } from '../components/projects/Project2';
-import { projectData as project3Data } from '../components/projects/Project3';
-import { projectData as project4Data } from '../components/projects/Project4';
+import { projectData as dkampusData } from '../components/projects/DkampusProject';
+import { projectData as plantiqueData } from '../components/projects/PlantiqueProject';
+import { projectData as BoomburstData } from '../components/projects/BoomburstProject';
+import { projectData as OpteraData } from '../components/projects/OpteraProject';
 
-export const projects = [project1Data, project2Data, project3Data, project4Data];
+export const projects = [dkampusData, plantiqueData, BoomburstData, OpteraData];

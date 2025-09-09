@@ -8,10 +8,10 @@ import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Resume from './components/pages/Resume';
 import { ThemeProvider } from './components/theme/ThemeContext';
-import Project1 from './components/projects/Project1';
-import Project2 from './components/projects/Project2';
-import Project3 from './components/projects/Project3';
-import Project4 from './components/projects/Project4';
+import DkampusProject from './components/projects/DkampusProject';
+import PlantiqueProject from './components/projects/PlantiqueProject';
+import BoomburstProject from './components/projects/BoomburstProject';
+import OpteraProject from './components/projects/OpteraProject';
 import { projects } from './data/projects';
 
 const ScrollToTop = () => {
@@ -26,10 +26,10 @@ const ScrollToTop = () => {
 
 const App = () => {
   const projectComponents = {
-    project1: Project1,
-    project2: Project2,
-    project3: Project3,
-    project4: Project4,
+    'dkampus-project': DkampusProject,
+    'plantique-project': PlantiqueProject,
+    'boomburst-project': BoomburstProject,
+    'optera-project': OpteraProject,
   };
 
   return (
