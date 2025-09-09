@@ -19,7 +19,7 @@ const ProjectCard = ({ title, description, image, tech, id }) => {
         <img
           src={image}
           alt={title}
-          className="h-48 w-full rounded-t-lg object-cover"
+          className="h-full w-full rounded-t-lg object-cover"
           onError={(e) => (e.target.src = '/assets/projects/fallback.jpg')}
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-t-lg">
