@@ -9,7 +9,7 @@ export const projectData = {
     id: 'dkampus-project',
     title: 'Dkampus: Online Food Delivery App',
     description:
-        'A food delivery application UI design, designed to connect local campus businesses with students for convenient online ordering.',
+        'A clean and practical design concept for a campus food delivery experience.',
     image: ProjectImage,
     tech: ['Figma'],
     sourceCodeLink: '',

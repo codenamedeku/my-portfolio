@@ -9,7 +9,7 @@ export const projectData = {
     id: 'optera-project',
     title: 'Optera: Workforce Management App',
     description:
-        'A workforce management application UI design, designed to streamline employee scheduling, field monitoring, and communication for companies.',
+        'A clean and structured design concept for workplace coordination.',
     image: ProjectImage,
     tech: ['Figma'],
     sourceCodeLink: '',

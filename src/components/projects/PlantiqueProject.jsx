@@ -9,7 +9,7 @@ export const projectData = {
     id: 'plantique-project',
     title: 'Plantique: Plant E-Commerce App',
     description:
-        'An e-commerce application UI design, designed to provide a modern plant shopping experience with a clean UI and seamless navigation.',
+        'modern shopping design that highlights plants with a simple and refreshing style.',
     image: ProjectImage,
     tech: ['Figma'],
     sourceCodeLink: '',
