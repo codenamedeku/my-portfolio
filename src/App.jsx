@@ -12,8 +12,8 @@ import { projects } from './data/projects';
 import DkampusProject from './components/projects/DkampusProject';
 import PlantiqueProject from './components/projects/PlantiqueProject';
 import BoomburstProject from './components/projects/BoomburstProject';
-import OpteraProject from './components/projects/OpteraProject';
 import PokemonUniteProject from './components/projects/PokemonUniteProject';
+import OpteraProject from './components/projects/OpteraProject';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -30,8 +30,8 @@ const App = () => {
     'dkampus-project': DkampusProject,
     'plantique-project': PlantiqueProject,
     'boomburst-project': BoomburstProject,
-    'optera-project': OpteraProject,
     'pokemon-unite-project': PokemonUniteProject,
+    'optera-project': OpteraProject,
   };
 
   return (
