@@ -9,7 +9,7 @@ export const projectData = {
     id: 'boomburst-project',
     title: 'Boomburst: Music Player App',
     description:
-        'A sleek and lively design concept that delivers a modern, immersive, and engaging music experience.',
+        'A sleek and lively design concept for a modern music experience.',
     image: ProjectImage,
     tech: ['Figma'],
     sourceCodeLink: '',

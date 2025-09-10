@@ -29,7 +29,7 @@ const ProjectCard = ({ title, description, image, tech, id }) => {
         </div>
       </div>
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="mb-2 text-base font-semibold text-gray-800 dark:text-gray-50 line-clamp-1">{title}</h3>
+        <h3 className="mb-2 text-base font-semibold text-gray-800 dark:text-gray-50">{title}</h3>
         <p className="flex-1 text-sm text-gray-600 dark:text-gray-300 line-clamp-2">{description}</p>
         <hr className="border-gray-200 dark:border-gray-700 my-4" />
         <div className="flex flex-wrap gap-2">
