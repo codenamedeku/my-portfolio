@@ -17,7 +17,7 @@ const Home = () => {
         </h1>
         <p className="mt-4 flex items-center text-sm text-gray-400 dark:text-gray-400">
           <GoDotFill className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-400" />
-          Based in Cikarang, West Java, Indonesia
+          Based in Sukabumi, West Java, Indonesia
         </p>
         <p className="mt-4 text-gray-500 dark:text-gray-300">
           I create interfaces that are easy to understand and websites that are practical, modern, and reliable.
