@@ -8,11 +8,12 @@ import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Resume from './components/pages/Resume';
 import { ThemeProvider } from './components/theme/ThemeContext';
+import { projects } from './data/projects';
 import DkampusProject from './components/projects/DkampusProject';
 import PlantiqueProject from './components/projects/PlantiqueProject';
 import BoomburstProject from './components/projects/BoomburstProject';
 import OpteraProject from './components/projects/OpteraProject';
-import { projects } from './data/projects';
+import PokemonUniteProject from './components/projects/PokemonUniteProject';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -30,6 +31,7 @@ const App = () => {
     'plantique-project': PlantiqueProject,
     'boomburst-project': BoomburstProject,
     'optera-project': OpteraProject,
+    'pokemon-unite-project': PokemonUniteProject,
   };
 
   return (
